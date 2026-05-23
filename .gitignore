@@ -1,12 +1,23 @@
 # Python
 __pycache__/
 *.pyc
+*.pyo
 
 # Virtual env
 .venv/
+venv/
 
 # Environment variables
 .env
 
-# Uploaded images (optional)
+# Node
+frontend/node_modules/
+
+# Build output (will be built by Vercel)
+frontend/dist/
+
+# Uploaded images
 static/uploads/
+
+# Logs
+*.log

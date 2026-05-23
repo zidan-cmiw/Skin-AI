@@ -411,7 +411,7 @@ def api_analyze():
         filepath = os.path.join(app.config['UPLOAD_FOLDER'], unique_name)
         file.save(filepath)
         # frontend URL (Flask serves from /static)
-        image_url = f"http://127.0.0.1:5000/static/uploads/{unique_name}"
+        image_url = f"/static/uploads/{unique_name}"
         
         ai_response = None
         # 1. Try Gemini first (Best for Vision currently if Groq fails)
